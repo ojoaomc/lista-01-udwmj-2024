@@ -1,6 +1,6 @@
 const readline = require('readline');
 
-// Cria uma interface para ler os dados do terminal
+// Cria uma interface para ler os dados
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -13,7 +13,6 @@ rl.question("Digite o primeiro número: ", (num1) => {
     // Converte as entradas para números e calcula a soma
     const soma = parseFloat(num1) + parseFloat(num2);
     
-    // Exibe o resultado
     console.log(`A soma dos numeros é ${soma}`);
     
     // Fecha a interface
